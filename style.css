@@ -1,0 +1,202 @@
+* { 
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+.home-container { 
+    margin-top: 2%;
+    height: 100%;
+}
+
+
+/* -------------------------------------------------------------------------- */
+/*                                 Navigation                                 */
+/* -------------------------------------------------------------------------- */
+
+.nav-list { 
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.nav-list li {
+    margin: 0 15px;
+}
+
+
+/* -------------------------------------------------------------------------- */
+/*                                    Hero                                    */
+/* -------------------------------------------------------------------------- */
+
+.hero-container { 
+    display: inline-block;
+}
+
+.text { 
+    font-size: 5em;
+    letter-spacing: 10px;
+    font-family: monospace;
+    border-right: 5px solid; /*Cursor styles*/
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    animation:
+    typing 2s steps(12), cursor .4s step-end infinite alternate;}
+
+
+    @keyframes cursor {
+        50% { border-color: transparent;}
+    }
+
+    @keyframes typing { 
+        from {width:0}
+    }
+
+/* -------------------------------------------------------------------------- */
+/*                                    Terminal                                    */
+/* -------------------------------------------------------------------------- */
+
+/* .top-bar { 
+    position: absolute;
+    height: 28px;
+    width: 200px; 
+    background-color: #eaeaea;
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+
+}
+
+.circle { 
+    width: 8px; 
+    height: 8px;
+    border-radius: 100%;
+    position: absolute;
+    left: 5px;
+    top: 2px;
+}
+
+.red { 
+    background: #FF605C;
+}
+
+.yellow { 
+    background: #FFBD44;
+    left: 17px;
+}
+
+.green { 
+    background: #00CA4E;
+    left: 29px;
+}
+
+.terminal-container { 
+    position: relative;
+    left: 25%;
+    top: 25%;
+}
+
+.text-container { 
+    height: 120px;
+    width: 200px;
+    background-color: black;
+    font-size: 0.5em;
+    position: absolute;
+    top: 12px;
+    color: #11fc2d ;
+}
+
+.body { 
+background-color: #37a5e1;
+
+} */
+
+.top-bar { 
+    position: absolute;
+    height: 28px;
+    width: 800px; 
+    background-color: #eaeaea;
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+    line-height: 1.5;
+
+}
+
+.circle { 
+    width: 8px; 
+    height: 8px;
+    border-radius: 100%;
+    position: absolute;
+    left: 5px;
+    top: 2px;
+}
+
+.red { 
+    background: #FF605C;
+}
+
+.yellow { 
+    background: #FFBD44;
+    left: 17px;
+}
+
+.green { 
+    background: #00CA4E;
+    left: 29px;
+}
+
+.terminal-container { 
+    position: relative;
+    /* left: 25%; */
+    top: 25%;
+    
+}
+
+.terminal-container, .text-container {
+    box-shadow: 0 50px 100px rgba(50, 50, 93, .15), 0 15px 35px rgba(50, 50, 93, .2), 0 5px 15px rgba(0, 0, 0, .12);
+
+}
+
+.text-container { 
+    height: 580px;
+    width: 800px;
+    background-color: black;
+    font-size: 1.5em;
+    position: absolute;
+    top: 12px;
+    color: #11fc2d ;
+    font-family: monospace;
+}
+
+body {
+display: flex;
+flex-direction: column;
+align-items: center;
+height: 100vh;
+text-rendering: optimizeLegibility;
+
+}
+
+.html, body { 
+    height: 100%;
+}
+
+
+
+.text-container p, .text-container label, .text-container ul, span { 
+    margin-left: 2em;
+}
+
+.text-container ul {
+    list-style: none;
+}
+
+.contact-list li {
+    margin: 0 15px;
+}
+
+.cursor { 
+    border-right: 5px solid;
+    animation:
+    cursor .4s step-end infinite alternate;}
