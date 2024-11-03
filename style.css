@@ -10,6 +10,15 @@
     height: 100%;
 }
 
+em { 
+    color: green;
+    font-style: normal;
+    font-weight: 600;
+}
+
+.hero-description a {
+    color: #049d3f;
+}
 
 /* -------------------------------------------------------------------------- */
 /*                                 Navigation                                 */
@@ -19,11 +28,32 @@
     list-style: none;
     display: flex;
     justify-content: flex-end;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.1em;
 }
 
 .nav-list li {
     margin: 0 15px;
+   
 }
+
+.nav-list a { 
+    text-decoration: none;
+    color: #333;
+    text-decoration: underline 0.15em rgba(0, 0, 0, 0);
+    transition: text-decoration-color 300ms;
+
+}
+
+.nav-list a:hover { 
+    opacity: .8;
+    color: rgb(19, 163, 8);
+    text-decoration-color: rgb(19, 163, 8);
+    
+}
+
+
+
 
 
 /* -------------------------------------------------------------------------- */
@@ -32,13 +62,26 @@
 
 .hero-container { 
     display: inline-block;
+    margin: 50px 0;
+    color: #011f01;
+  
 }
+
+.hero-description { 
+    font-family: "Montserrat", sans-serif;
+    margin: 40px 0; 
+}
+
+.hero-description a { 
+    text-decoration: none;
+}
+
 
 .text { 
     font-size: 5em;
-    letter-spacing: 10px;
-    font-family: monospace;
-    border-right: 5px solid; /*Cursor styles*/
+    letter-spacing: 1px;
+    font-family: "Open Sans", monospace, sans-serif;
+    border-right: 30px solid rgba(0, 128, 0, 0.368) ; /*Cursor styles*/
     width: 100%;
     white-space: nowrap;
     overflow: hidden;
@@ -58,67 +101,15 @@
 /*                                    Terminal                                    */
 /* -------------------------------------------------------------------------- */
 
-/* .top-bar { 
-    position: absolute;
-    height: 28px;
-    width: 200px; 
-    background-color: #eaeaea;
-    border-top-left-radius: 2px;
-    border-top-right-radius: 2px;
-
-}
-
-.circle { 
-    width: 8px; 
-    height: 8px;
-    border-radius: 100%;
-    position: absolute;
-    left: 5px;
-    top: 2px;
-}
-
-.red { 
-    background: #FF605C;
-}
-
-.yellow { 
-    background: #FFBD44;
-    left: 17px;
-}
-
-.green { 
-    background: #00CA4E;
-    left: 29px;
-}
-
-.terminal-container { 
-    position: relative;
-    left: 25%;
-    top: 25%;
-}
-
-.text-container { 
-    height: 120px;
-    width: 200px;
-    background-color: black;
-    font-size: 0.5em;
-    position: absolute;
-    top: 12px;
-    color: #11fc2d ;
-}
-
-.body { 
-background-color: #37a5e1;
-
-} */
 
 .top-bar { 
     position: absolute;
     height: 28px;
-    width: 800px; 
+    width: 900px; 
     background-color: #eaeaea;
     border-top-left-radius: 2px;
     border-top-right-radius: 2px;
+    /* border-radius: 10px 10px 0 0; */
     line-height: 1.5;
 
 }
@@ -159,14 +150,18 @@ background-color: #37a5e1;
 }
 
 .text-container { 
-    height: 580px;
-    width: 800px;
-    background-color: black;
+    height: 598px;
+    width: 900px;
+    /* background-color: black; */
+    background-color: #333;
     font-size: 1.5em;
     position: absolute;
     top: 12px;
-    color: #11fc2d ;
+    color: white;
     font-family: monospace;
+    padding-bottom: 60px;
+    border-bottom-left-radius: 2px;
+    border-bottom-right-radius: 2px;
 }
 
 body {
@@ -175,6 +170,7 @@ flex-direction: column;
 align-items: center;
 height: 100vh;
 text-rendering: optimizeLegibility;
+background-color: whitesmoke;
 
 }
 
@@ -192,11 +188,48 @@ text-rendering: optimizeLegibility;
     list-style: none;
 }
 
+
+
 .contact-list li {
     margin: 0 15px;
+    color: yellow;
+    cursor:pointer;
 }
 
 .cursor { 
     border-right: 5px solid;
+    color: #11fc2d ;
     animation:
     cursor .4s step-end infinite alternate;}
+   
+
+ .text-container p, .text-container ul { 
+    color: #11fc2d ;
+ }
+
+ .text-container a {
+    color: yellow;
+    text-decoration: none;
+ }
+
+ /* -------------------------------------------------------------------------- */
+ /*                                  Projects                                  */
+ /* -------------------------------------------------------------------------- */
+ #projects { 
+    background-color: rgb(199, 199, 221);
+    margin-top: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+ }
+
+
+
+ .projects-title { 
+font-size: 2em;
+font-family: "Montserrat", serif;
+font-weight: 500;
+border-bottom: 6px solid #049d3f;
+
+
+ }
