@@ -150,7 +150,7 @@ em {
 }
 
 .text-container { 
-    height: 598px;
+    height: 750px;
     width: 900px;
     /* background-color: black; */
     background-color: #333;
@@ -217,7 +217,7 @@ background-color: whitesmoke;
  /* -------------------------------------------------------------------------- */
  #projects { 
     background-color: rgb(199, 199, 221);
-    margin-top: 80%;
+    margin-top: 90%;
     display: flex;
     flex-direction: column;
     align-items: center;
